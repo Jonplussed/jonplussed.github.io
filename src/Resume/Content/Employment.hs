@@ -41,7 +41,7 @@ bendyworks = Employer
   , url =       "http://bendyworks.com"
   , yearStart = "2013"
   , yearEnd =   "2015"
-  , position =  "developer"
+  , position =  "Developer"
   , details =   "Beyond having a near-perfect record on client happiness, I \
                 \contributed numerous technical talks on functional \
                 \programming, assisted others in learning Haskell, and ran the \
@@ -54,7 +54,7 @@ liaison = Employer
   , url =       "http://www.liaison-intl.com"
   , yearStart = "2011"
   , yearEnd =   "2013"
-  , position =  "developer"
+  , position =  "Developer"
   , details =   "Helped renovate and rewrite a massive, 100s of \
                 \read/writes-per-second distributed document-parsing and ETL \
                 \process."
@@ -66,7 +66,7 @@ cfi = Employer
   , url =       "http://centerforinquiry.net"
   , yearStart = "2009"
   , yearEnd =   "2011"
-  , position =  "developer, system admin"
+  , position =  "Developer, System Administrator"
   , details =   "Along with administering their servers, designing their \
                 \multiple websites, and end-to-end revamping their publishing \
                 \and editorial processess, I developed a conference-website \
