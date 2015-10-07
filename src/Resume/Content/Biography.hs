@@ -12,7 +12,7 @@ import qualified Text.Blaze.Html5 as Tag
 newtype Biography = Biography Text
 
 instance Tag.ToMarkup Biography where
-  toMarkup (Biography text) = Tag.p $ Tag.text text
+  toMarkup (Biography text) = Tag.p $ Tag.preEscapedText text
 
 biography :: Biography
 biography = Biography

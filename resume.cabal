@@ -9,7 +9,7 @@ build-type:           Simple
 extra-source-files:   README.md
 cabal-version:        >= 1.10
 
-executable server
+executable generator
   hs-source-dirs:     src
   main-is:            Main.hs
   ghc-options:        -W -Wall

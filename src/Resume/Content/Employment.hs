@@ -25,13 +25,14 @@ instance Tag.ToMarkup Employer where
   toMarkup emp = do
     Tag.h3 $ do
       Tag.a ! Attr.href (Tag.textValue $ url emp) $ Tag.text (name emp)
-      Tag.text $ yearStart emp <> "&mdash;" <> yearEnd emp
+      Tag.preEscapedText $ yearStart emp <> "&mdash;" <> yearEnd emp
     Tag.h4 . Tag.text $ position emp
-    Tag.details $
-      Tag.p . Tag.text $ details emp
+    Tag.p . Tag.preEscapedText $ details emp
 
 employers :: [Employer]
 employers = [bendyworks, liaison, cfi]
+
+-- private functions
 
 bendyworks :: Employer
 bendyworks = Employer
@@ -48,7 +49,7 @@ bendyworks = Employer
 
 liaison :: Employer
 liaison = Employer
-  { name =      "Liaason"
+  { name =      "Liaison"
   , url =       "http://www.liaison-intl.com"
   , yearStart = "2011"
   , yearEnd =   "2013"
