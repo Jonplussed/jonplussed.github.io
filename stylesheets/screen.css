@@ -1,0 +1,86 @@
+/* typography */
+
+body {
+  font-family: Palatino, 'Book Antiqua', serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, sans-serif;
+  color: #555;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h3 a {
+  font-family: Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #44B;
+  border-bottom: 1px dashed #44B;
+}
+
+a:hover,
+a:active {
+  color: #77B;
+  border-bottom-color: #77B;
+}
+
+
+
+/* base layout */
+
+.wrapper {
+  max-width: 750px;
+  min-width: 150px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+
+/* section/header arrangement */
+
+section {
+  clear: left;
+  overflow-x: auto;
+}
+
+.section-title {
+  width: 150px;
+  float: left;
+}
+
+.section-content, .header-content {
+  float: left;
+  width: 100%;
+  max-width: 600px;
+  min-width: 150px;
+  border-bottom: 1px solid #DDD;
+}
+
+header::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  float: left;
+}
+
+
+/* section typography */

@@ -21,8 +21,8 @@ list = Tag.ul . mapM_ (Tag.li . Tag.toMarkup)
 section :: Text -> Tag.Markup -> Tag.Markup
 section name contents =
   Tag.section ! Attr.id (Tag.textValue $ downcase name) $ do
-    Tag.h2 $ Tag.text name
-    Tag.div ! Attr.class_ "content" $
+    Tag.h4 ! Attr.class_ "section-title" $ Tag.text name
+    Tag.div ! Attr.class_ "section-content" $
       contents
 
 stylesheet :: Text -> Text -> Tag.Markup

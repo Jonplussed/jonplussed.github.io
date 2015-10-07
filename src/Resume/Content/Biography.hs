@@ -17,12 +17,12 @@ instance Tag.ToMarkup Biography where
 biography :: Biography
 biography = Biography
   "Relevant to software, I have three passions: tooling, data, and \
-  \the web&ndash; the web because of its unparalled ability to \
+  \the web&mdash; the web because of its unparalled ability to \
   \distribute information, and data because the proper analysis and \
-  \presentation of allows people to make informed&ndash; and therefore \
-  \better&ndash; decisions. Tooling&ndash; so contentious!&ndash; is \
+  \presentation of allows people to make informed&mdash; and therefore \
+  \better&mdash; decisions. Tooling&mdash; so contentious!&mdash; is \
   \more a matter or priority, and my priority is this: I desire to \
   \craft software that is correct, readable, elegant, and performant, \
   \and no language provides me this capability as does Haskell (and \
-  \associated PureScript, Elm, etc)&ndash; the basis for my current \
+  \associated PureScript, Elm, etc)&mdash; the basis for my current \
   \and future endeavors."

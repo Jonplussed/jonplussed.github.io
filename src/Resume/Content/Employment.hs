@@ -25,8 +25,9 @@ instance Tag.ToMarkup Employer where
   toMarkup emp = do
     Tag.h3 $ do
       Tag.a ! Attr.href (Tag.textValue $ url emp) $ Tag.text (name emp)
-      Tag.preEscapedText $ yearStart emp <> "&mdash;" <> yearEnd emp
-    Tag.h4 . Tag.text $ position emp
+      Tag.text " "
+      Tag.preEscapedText $ yearStart emp <> "&ndash;" <> yearEnd emp
+    Tag.h5 . Tag.text $ position emp
     Tag.p . Tag.preEscapedText $ details emp
 
 employers :: [Employer]
