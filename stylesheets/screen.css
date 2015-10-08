@@ -7,7 +7,14 @@ body {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 3em;
+  letter-spacing: -1px;
+}
+
+h2, h3, h4, h5, h6 {
   font-family: Helvetica, sans-serif;
   color: #555;
 }
@@ -60,6 +67,26 @@ ul {
   padding-left: 0;
 }
 
+table {
+  margin: 1em 0;
+}
+
+td {
+  padding-right: 1em;
+}
+
+.progress-outer {
+  height: 5px;
+  width: 150px;
+  border: 1px solid #777;
+  margin-bottom: 3px;
+}
+
+.progress-inner {
+  height: 100%;
+  background-color: #999;
+}
+
 
 
 /* section/header arrangement */
@@ -93,10 +120,6 @@ header::before {
 
 
 /* section-specific styles */
-
-#employment ul {
-  list-style-type: none;
-}
 
 #employment li {
   border-bottom: 1px dashed #DDD;

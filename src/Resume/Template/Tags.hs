@@ -1,9 +1,10 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Resume.Template.Tags
-( list
+( listItems
 , section
 , stylesheet
+, tableRows
 ) where
 
 import Data.Char (toLower)
@@ -15,8 +16,11 @@ import qualified Data.Text as Text
 import qualified Text.Blaze.Html5 as Tag
 import qualified Text.Blaze.Html5.Attributes as Attr
 
-list :: Tag.ToMarkup a => [a] -> Tag.Markup
-list = Tag.ul . mapM_ (Tag.li . Tag.toMarkup)
+listItems :: Tag.ToMarkup a => [a] -> Tag.Markup
+listItems = Tag.ul . mapM_ (Tag.li . Tag.toMarkup)
+
+tableRows :: Tag.ToMarkup a => [a] -> Tag.Markup
+tableRows = Tag.table . mapM_ (Tag.tr . Tag.toMarkup)
 
 section :: Text -> Tag.Markup -> Tag.Markup
 section name contents =

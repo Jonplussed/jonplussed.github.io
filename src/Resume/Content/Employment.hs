@@ -41,7 +41,7 @@ bendyworks = Employer
   , url =       "http://bendyworks.com"
   , yearStart = "2013"
   , yearEnd =   "2015"
-  , position =  "Developer"
+  , position =  "Developer, Project Lead"
   , details =   "Beyond having a near-perfect record on client happiness, I \
                 \contributed numerous technical talks on functional \
                 \programming, assisted others in learning Haskell, and ran the \

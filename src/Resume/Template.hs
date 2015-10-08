@@ -28,8 +28,8 @@ webpage = wrapper contents
 contents :: Tag.Markup
 contents = do
   Tmpl.section "Biography" $ Tag.toMarkup Bio.biography
-  Tmpl.section "Languages" $ Tmpl.list Lang.languages
-  Tmpl.section "Employment" $ Tmpl.list Emp.employers
+  Tmpl.section "Languages" $ Tmpl.tableRows Lang.languages
+  Tmpl.section "Employment" $ Tmpl.listItems Emp.employers
 
 wrapper :: Tag.Markup -> Tag.Markup
 wrapper more = do
