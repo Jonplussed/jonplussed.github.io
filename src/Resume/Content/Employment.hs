@@ -71,7 +71,7 @@ cfi = Employer
   , yearStart = "2009"
   , yearEnd =   "2011"
   , position =  "Developer, System Administrator"
-  , details =   "Along with administering this international non-profits \
+  , details =   "Along with administering this international non-profit's \
                 \servers, designing their multiple websites, and end-to-end \
                 \revamping publishing and editorial processes for their \
                 \magazines and promotional media, I developed a conference \
