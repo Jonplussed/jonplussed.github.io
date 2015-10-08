@@ -114,7 +114,7 @@ nav li {
 
 /* section/header arrangement */
 
-section {
+section, .pseudo-section {
   clear: left;
   overflow-x: auto;
 }
@@ -124,7 +124,7 @@ section {
   float: left;
 }
 
-.section-content, .header-content {
+.section-content, .pseudo-section-content {
   float: left;
   width: 100%;
   max-width: 550px;
@@ -132,7 +132,7 @@ section {
   border-bottom: 1px solid #CCC;
 }
 
-header:before {
+.pseudo-section:before {
   content: "";
   display: block;
   height: 1px;
