@@ -27,7 +27,9 @@ data Section = Section
 instance Tag.ToMarkup Section where
   toMarkup sect =
     Tag.section ! Attr.id (Tag.textValue $ ident sect) $ do
-      Tag.h4 ! Attr.class_ "section-title" $ Tag.text $ name sect
+      Tag.div ! Attr.class_ "section-title" $ do
+        Tag.h4 $ Tag.text $ name sect
+        subtitle $ aside sect
       Tag.div ! Attr.class_ "section-content" $
         conts sect
 
@@ -75,3 +77,11 @@ projects = Section
   , ident = "projects"
   , conts = Tmpl.listItems Content.projects
   }
+
+-- private functions
+
+subtitle :: Maybe Text -> Tag.Markup
+subtitle text =
+  case text of
+    Just t -> Tag.h6 ! Attr.class_ "subtitle" $ Tag.text t
+    _ -> return ()

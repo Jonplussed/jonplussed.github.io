@@ -14,7 +14,7 @@ h1 {
   letter-spacing: -1px;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5 {
   font-family: Helvetica, sans-serif;
   color: #555;
   margin: 1em 0;
@@ -28,8 +28,14 @@ h4 {
   text-transform: uppercase;
 }
 
-h5 {
+h5, h6 {
   margin-top: -1.5em;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: .8em;
+  color: #666;
 }
 
 a {
@@ -122,6 +128,7 @@ section, .pseudo-section {
 .section-title {
   width: 150px;
   float: left;
+  overflow-x: auto;
 }
 
 .section-content, .pseudo-section-content {
