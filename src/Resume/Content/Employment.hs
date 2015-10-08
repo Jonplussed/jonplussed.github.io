@@ -58,10 +58,10 @@ liaison = Employer
   , yearStart = "2011"
   , yearEnd =   "2013"
   , position =  "Developer"
-  , details =   "I helped to renovate and rewrite a massive, hundreds of \
+  , details =   "I helped renovate and rewrite a massive, hundreds of \
                 \read/writes-per-second, distributed, document-parsing and \
-                \ETL process and to patch a nasty Rails 3 data-duplication \
-                \bug."
+                \ETL process. I also helped patch a nasty Rails 3 \
+                \data-duplication bug."
   }
 
 cfi :: Employer
