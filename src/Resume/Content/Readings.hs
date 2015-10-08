@@ -18,7 +18,7 @@ data Reading = Reading
 instance Tag.ToMarkup Reading where
   toMarkup book = do
     Tag.td . Tag.text $ name book
-    Tag.td . progressBar $ percent book
+    Tag.td . progressBar "complete" $ percent book
 
 readings :: [Reading]
 readings =

@@ -24,7 +24,10 @@ data Employer = Employer
 instance Tag.ToMarkup Employer where
   toMarkup emp = do
     Tag.h3 $ do
-      Tag.a ! Attr.href (Tag.textValue $ url emp) $ Tag.text (name emp)
+      Tag.a
+        ! Attr.href (Tag.textValue $ url emp)
+        ! Attr.class_ "name"
+        $ Tag.text (name emp)
       Tag.text " "
       Tag.preEscapedText $ yearStart emp <> "&ndash;" <> yearEnd emp
     Tag.h5 . Tag.text $ position emp

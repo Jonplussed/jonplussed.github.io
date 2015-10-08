@@ -17,15 +17,11 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-family: Helvetica, sans-serif;
   color: #555;
+  margin: 1em 0;
 }
 
 h3 {
   font-weight: normal;
-}
-
-h3 a {
-  font-family: Palatino, 'Book Antiqua', serif;
-  font-style: italic;
 }
 
 h4 {
@@ -33,11 +29,10 @@ h4 {
 }
 
 h5 {
-  margin-top: -1em;
+  margin-top: -1.5em;
 }
 
 a {
-  font-style: italic;
   text-decoration: none;
   color: #44B;
 }
@@ -50,12 +45,17 @@ ul {
   list-style-type: circle;
 }
 
+.name {
+  font-family: Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+}
+
 
 
 /* base layout */
 
 body {
-  background-color: #BBB;
+  background-color: #DDD;
 }
 
 .wrapper-inner {
@@ -69,6 +69,7 @@ body {
   background-color: #FFF;
   margin-top: 5px;
   border-top: 1px solid #000;
+  padding-top: 1em;
 }
 
 ul {
@@ -92,7 +93,21 @@ td {
 
 .progress-inner {
   height: 100%;
-  background-color: #999;
+  background-color: #BBB;
+}
+
+
+
+/* navigation */
+
+nav ul {
+  list-style-type: none;
+  overflow-x: auto;
+}
+
+nav li {
+  float: left;
+  padding: 0 1em 0 0;
 }
 
 
@@ -135,7 +150,4 @@ header:before {
 
 #employment li:last-child {
   border-bottom: none;
-}
-
-.project-name {
 }

@@ -19,16 +19,18 @@ import qualified Text.Blaze.Html5.Attributes as Attr
 listItems :: Tag.ToMarkup a => [a] -> Tag.Markup
 listItems = Tag.ul . mapM_ (Tag.li . Tag.toMarkup)
 
-progressBar :: Int -> Tag.Markup
-progressBar percent =
+progressBar :: Text -> Int -> Tag.Markup
+progressBar name percent =
     Tag.div
-      ! Attr.class_ "progress-outer" $
-      Tag.div
+      ! Attr.class_ "progress-outer"
+      ! Attr.title (Tag.textValue $ widthPerc <> " " <> name)
+      $ Tag.div
         ! Attr.class_ "progress-inner"
-        ! Attr.style (Tag.textValue widthPerc) $
-        mempty
+        ! Attr.style (Tag.textValue widthAttr)
+        $ mempty
   where
-    widthPerc = "width: " <> Text.pack (show percent) <> "%"
+    widthPerc = Text.pack (show percent) <> "%"
+    widthAttr = "width: " <> widthPerc
 
 tableRows :: Tag.ToMarkup a => [a] -> Tag.Markup
 tableRows = Tag.table . mapM_ (Tag.tr . Tag.toMarkup)

@@ -20,8 +20,10 @@ data Project = Project
 
 instance Tag.ToMarkup Project where
   toMarkup lib = do
-    Tag.a ! Attr.href (Tag.textValue $ url lib) ! Attr.class_ "project-name" $
-      Tag.text (name lib)
+    Tag.a
+      ! Attr.href (Tag.textValue $ url lib)
+      ! Attr.class_ "name"
+      $ Tag.text (name lib)
     Tag.text $ ", " <> desc lib
 
 projects :: [Project]

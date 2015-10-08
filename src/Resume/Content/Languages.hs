@@ -19,7 +19,7 @@ data Language = Language
 instance Tag.ToMarkup Language where
   toMarkup lang = do
     Tag.td . Tag.text $ name lang
-    Tag.td . progressBar $ percent lang
+    Tag.td . progressBar "confidence" $ percent lang
 
 languages :: [Language]
 languages =

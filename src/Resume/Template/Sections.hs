@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Resume.Template.Sections
-( Section
+( Section (..)
 , sections
 ) where
 
@@ -34,7 +34,7 @@ instance Tag.ToMarkup Section where
 sections :: [Section]
 sections = [biography, languages, employment, readings, projects]
 
--- private functions
+-- sections list
 
 biography :: Section
 biography = Section
@@ -56,7 +56,7 @@ employment :: Section
 employment = Section
   { name  = "Employment"
   , aside = Nothing
-  , ident = "Employment"
+  , ident = "employment"
   , conts = Tmpl.listItems Content.employers
   }
 
