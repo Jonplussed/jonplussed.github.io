@@ -33,19 +33,17 @@ h4 {
 }
 
 h5 {
-  margin-top: -10px;
+  margin-top: -1em;
 }
 
 a {
+  font-style: italic;
   text-decoration: none;
   color: #44B;
-  border-bottom: 1px dashed #44B;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
   color: #77B;
-  border-bottom-color: #77B;
 }
 
 ul {
@@ -56,11 +54,21 @@ ul {
 
 /* base layout */
 
-.wrapper {
+body {
+  background-color: #BBB;
+}
+
+.wrapper-inner {
   max-width: 700px;
   min-width: 150px;
   padding: 0 10px;
   margin: auto;
+}
+
+.wrapper-outer {
+  background-color: #FFF;
+  margin-top: 5px;
+  border-top: 1px solid #000;
 }
 
 ul {
@@ -106,10 +114,10 @@ section {
   width: 100%;
   max-width: 550px;
   min-width: 150px;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #CCC;
 }
 
-header::before {
+header:before {
   content: "";
   display: block;
   height: 1px;
@@ -122,6 +130,12 @@ header::before {
 /* section-specific styles */
 
 #employment li {
-  border-bottom: 1px dashed #DDD;
+  border-bottom: 1px dashed #CCC;
 }
 
+#employment li:last-child {
+  border-bottom: none;
+}
+
+.project-name {
+}
