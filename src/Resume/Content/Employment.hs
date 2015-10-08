@@ -45,10 +45,10 @@ bendyworks = Employer
   , yearStart = "2013"
   , yearEnd =   "2015"
   , position =  "Developer, Project Lead"
-  , details =   "Beyond having a near-perfect record on client happiness, I \
-                \contributed numerous technical talks on functional \
-                \programming, assisted others in learning Haskell, and ran the \
-                \Madison Haskell Users Group."
+  , details =   "In addition to maintaining a near-perfect record on client \
+                \happiness, I contributed numerous technical talks on \
+                \functional programming, assisted others in learning Haskell, \
+                \and ran the Madison Haskell Users Group."
   }
 
 liaison :: Employer
@@ -58,9 +58,10 @@ liaison = Employer
   , yearStart = "2011"
   , yearEnd =   "2013"
   , position =  "Developer"
-  , details =   "I helped to renovate and rewrite a massive, 100s of \
-                \read/writes-per-second distributed document-parsing and ETL \
-                \process and to patch a nasty Rails 3 data-duplication bug."
+  , details =   "I helped to renovate and rewrite a massive, hundreds of \
+                \read/writes-per-second, distributed, document-parsing and \
+                \ETL process and to patch a nasty Rails 3 data-duplication \
+                \bug."
   }
 
 cfi :: Employer
@@ -70,8 +71,9 @@ cfi = Employer
   , yearStart = "2009"
   , yearEnd =   "2011"
   , position =  "Developer, System Administrator"
-  , details =   "Along with administering their servers, designing their \
-                \multiple websites, and end-to-end revamping their publishing \
-                \and editorial processess, I developed a conference-website \
-                \framework to simplify future website generation."
+  , details =   "Along with administering this international non-profits \
+                \servers, designing their multiple websites, and end-to-end \
+                \revamping publishing and editorial processes for their \
+                \magazines and promotional media, I developed a conference \
+                \website engine to simplify future website generation."
   }

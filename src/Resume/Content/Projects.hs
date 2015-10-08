@@ -56,7 +56,7 @@ hooferApi :: Project
 hooferApi = Project
   { name = "hoofer-api"
   , url  = "https://github.com/Jonplussed/hoofers-api"
-  , desc = "a tiny JSON API server for the Hoofer sailing club"
+  , desc = "a tiny JSON API server for the Hoofer sailing club at UW Madison"
   }
 
 urlTextHistogram :: Project
