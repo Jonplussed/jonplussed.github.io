@@ -148,6 +148,10 @@ section, .pseudo-section {
   float: left;
 }
 
+footer .pseudo-section-content {
+  border-bottom: none;
+}
+
 
 
 /* section-specific styles */

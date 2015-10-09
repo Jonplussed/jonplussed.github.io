@@ -46,7 +46,7 @@ pageHead =
     Tag.meta ! Attr.charset "UTF-8"
     Tag.title $ Tag.text pageTitle
     Tmpl.stylesheet "all" "stylesheets/normalize.css"
-    Tmpl.stylesheet "screen" "stylesheets/screen.css"
+    Tmpl.stylesheet "all" "stylesheets/main.css"
     Tmpl.stylesheet "print" "stylesheets/print.css"
 
 pageBody :: Tag.Markup

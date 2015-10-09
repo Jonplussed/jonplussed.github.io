@@ -1,8 +1,13 @@
-nav {
+nav, .progress-outer {
   display: none;
 }
 
-a {
-  font-style: normal;
-  color: #000;
+.wrapper-outer {
+  border-top: none;
+  padding-top: 0;
 }
+
+a {
+  color: black;
+}
+
