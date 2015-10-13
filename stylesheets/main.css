@@ -12,11 +12,12 @@ h1 {
   font-style: italic;
   font-size: 3em;
   letter-spacing: -1px;
+  color: #444;
 }
 
 h2, h3, h4, h5 {
   font-family: Helvetica, sans-serif;
-  color: #555;
+  color: #444;
   margin: 1em 0;
 }
 
@@ -35,16 +36,16 @@ h5, h6 {
 h6 {
   font-weight: normal;
   font-size: .8em;
-  color: #666;
+  color: #555;
 }
 
 a {
   text-decoration: none;
-  color: #44B;
+  color: #606;
 }
 
 a:hover, a:active {
-  color: #77B;
+  color: #969;
 }
 
 ul {
@@ -61,7 +62,7 @@ ul {
 /* base layout */
 
 body {
-  background-color: #DDD;
+  background-color: #606;
 }
 
 .wrapper-inner {
@@ -72,10 +73,10 @@ body {
 }
 
 .wrapper-outer {
-  background-color: #FFF;
   margin-top: 5px;
-  border-top: 1px solid #000;
+  border-top: 1px solid #FFF;
   padding-top: 1em;
+  background: #fff url("/images/gradient-top.png") repeat-x right top;
 }
 
 ul {
@@ -93,14 +94,14 @@ td {
 .progress-outer {
   height: 5px;
   width: 150px;
-  border: 1px solid #777;
+  border: 1px solid #888;
   border-radius: 3px;
   margin-bottom: 3px;
 }
 
 .progress-inner {
   height: 100%;
-  background-color: #BBB;
+  background-color: #C9C;
 }
 
 

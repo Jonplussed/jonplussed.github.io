@@ -26,7 +26,7 @@ languages =
   [ Language "Haskell" 80
   , Language "PureScript" 70
   , Language "JavaScript" 60
-  , Language "Ruby" 50
+  , Language "Ruby" 60
   , Language "PHP" 20
   , Language "C" 5
   ]
