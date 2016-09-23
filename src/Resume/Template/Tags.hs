@@ -12,7 +12,6 @@ import Data.Text (Text)
 import Text.Blaze.Html5 ((!))
 
 import qualified Data.Text as Text
-
 import qualified Text.Blaze.Html5 as Tag
 import qualified Text.Blaze.Html5.Attributes as Attr
 
@@ -37,7 +36,8 @@ tableRows = Tag.table . mapM_ (Tag.tr . Tag.toMarkup)
 
 stylesheet :: Text -> Text -> Tag.Markup
 stylesheet device url =
-  Tag.link ! Attr.rel "stylesheet"
-           ! Attr.type_ "text/css"
-           ! Attr.media (Tag.textValue device)
-           ! Attr.href (Tag.textValue url)
+    Tag.link
+      ! Attr.rel "stylesheet"
+      ! Attr.type_ "text/css"
+      ! Attr.media (Tag.textValue device)
+      ! Attr.href (Tag.textValue url)

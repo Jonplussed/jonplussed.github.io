@@ -18,15 +18,16 @@ data Language = Language
 
 instance Tag.ToMarkup Language where
   toMarkup lang = do
-    Tag.td . Tag.text $ name lang
-    Tag.td . progressBar "confidence" $ percent lang
+      Tag.td . Tag.text $ name lang
+      Tag.td . progressBar "confidence" $ percent lang
 
 languages :: [Language]
 languages =
-  [ Language "Haskell" 80
-  , Language "PureScript" 70
-  , Language "JavaScript" 60
-  , Language "Ruby" 60
-  , Language "PHP" 20
-  , Language "C" 5
-  ]
+    [ Language "Haskell"    80
+    , Language "PureScript" 70
+    , Language "JavaScript" 60
+    , Language "Ruby"       60
+    , Language "Bash"       40
+    , Language "C"          20
+    , Language "PHP"         5
+    ]

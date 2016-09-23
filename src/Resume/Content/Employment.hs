@@ -23,20 +23,38 @@ data Employer = Employer
 
 instance Tag.ToMarkup Employer where
   toMarkup emp = do
-    Tag.h3 $ do
-      Tag.a
-        ! Attr.href (Tag.textValue $ url emp)
-        ! Attr.class_ "name"
-        $ Tag.text (name emp)
-      Tag.text " "
-      Tag.preEscapedText $ yearStart emp <> "&ndash;" <> yearEnd emp
-    Tag.h5 . Tag.text $ position emp
-    Tag.p . Tag.preEscapedText $ details emp
+      Tag.h3 $ do
+        Tag.a
+          ! Attr.href (Tag.textValue $ url emp)
+          ! Attr.class_ "name"
+          $ Tag.text (name emp)
+        Tag.text " "
+        Tag.preEscapedText $ yearStart emp <> "&ndash;" <> yearEnd emp
+      Tag.h5 . Tag.text $ position emp
+      Tag.p . Tag.preEscapedText $ details emp
 
 employers :: [Employer]
-employers = [bendyworks, liaison, cfi]
+employers =
+    [ thoughtleadr
+    , bendyworks
+    , liaison
+    , cfi
+    ]
 
 -- private functions
+
+thoughtleadr :: Employer
+thoughtleadr = Employer
+  { name =      "Thoughtleadr"
+  , url =       "http://www.thoughtleadr.com"
+  , yearStart = "2015"
+  , yearEnd =   "present"
+  , position =  "Engineer"
+  , details =   "As part of an international and asynchronous team, I design \
+                \and develop on an array of Haskell-based, real-time event \
+                \processing services with the goal of delivering valuable and \
+                \relevant native advertising."
+  }
 
 bendyworks :: Employer
 bendyworks = Employer
@@ -60,8 +78,7 @@ liaison = Employer
   , position =  "Developer"
   , details =   "I helped renovate and rewrite a massive, hundreds of \
                 \read/writes-per-second, distributed, document-parsing and \
-                \ETL process. I also helped patch a nasty Rails 3 \
-                \data-duplication bug."
+                \ETL process."
   }
 
 cfi :: Employer

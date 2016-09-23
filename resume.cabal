@@ -19,4 +19,4 @@ executable generator
                       blaze-markup == 0.7.*,
                       mtl == 2.2.*,
                       text == 1.2.*,
-                      transformers == 0.4.*
+                      transformers == 0.5.*
