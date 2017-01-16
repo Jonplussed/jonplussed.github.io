@@ -1,9 +1,1 @@
-dist
-cabal-dev
-*.o
-*.hi
-*.chi
-*.chs.h
-.cabal-sandbox/**
-cabal.sandbox.config
-.virthualenv
+.stack-work
