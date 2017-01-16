@@ -1,7 +1,3 @@
-nav, .progress-outer {
-  display: none;
-}
-
 .wrapper-outer {
   border-top: none;
   padding-top: 0;
@@ -10,4 +6,3 @@ nav, .progress-outer {
 a {
   color: black;
 }
-
