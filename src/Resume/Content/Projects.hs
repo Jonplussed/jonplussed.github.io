@@ -31,7 +31,6 @@ projects =
     [ webglRaw
     , webglMonad
     , midiFree
-    , hooferApi
     , urlTextHistogram
     ]
 
@@ -56,13 +55,6 @@ midiFree = Project
     { name = "midi-free"
     , url  = "https://github.com/Jonplussed/midi-free"
     , desc = "a free monad for writing MIDI files"
-    }
-
-hooferApi :: Project
-hooferApi = Project
-    { name = "hoofer-api"
-    , url  = "https://github.com/Jonplussed/hoofers-api"
-    , desc = "a tiny JSON API server for the Hoofer sailing club at UW Madison"
     }
 
 urlTextHistogram :: Project
