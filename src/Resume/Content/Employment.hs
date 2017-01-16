@@ -50,10 +50,10 @@ thoughtleadr = Employer
   , yearStart = "2015"
   , yearEnd =   "present"
   , position =  "Engineer"
-  , details =   "As part of an international and asynchronous team, I design \
-                \and develop on an array of Haskell-based, real-time event \
-                \processing services with the goal of delivering valuable and \
-                \relevant native advertising."
+  , details =   "As part of an international and asynchronous team, I \
+                \contribute to an array of Haskell-based event processing \
+                \services and use real-time data analysis to deliver valuable \
+                \and relevant native advertising."
   }
 
 bendyworks :: Employer

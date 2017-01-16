@@ -14,9 +14,18 @@ executable generator
   main-is:            Main.hs
   ghc-options:        -W -Wall
   default-language:   Haskell2010
-  build-depends:      base == 4.*,
-                      blaze-html == 0.8.*,
-                      blaze-markup == 0.7.*,
-                      mtl == 2.2.*,
-                      text == 1.2.*,
-                      transformers == 0.5.*
+  build-depends:      base == 4.*
+                    , blaze-html == 0.8.*
+                    , blaze-markup == 0.7.*
+                    , mtl == 2.2.*
+                    , text == 1.2.*
+                    , transformers == 0.5.*
+  other-modules:      Resume.Content.Biography
+                    , Resume.Content.Employment
+                    , Resume.Content.Languages
+                    , Resume.Content.Libraries
+                    , Resume.Content.Projects
+                    , Resume.Content.Readings
+                    , Resume.Template
+                    , Resume.Template.Sections
+                    , Resume.Template.Tags

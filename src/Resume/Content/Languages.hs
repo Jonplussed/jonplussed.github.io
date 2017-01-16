@@ -24,10 +24,10 @@ instance Tag.ToMarkup Language where
 languages :: [Language]
 languages =
     [ Language "Haskell"    80
+    , Language "Ruby"       70
     , Language "PureScript" 70
     , Language "JavaScript" 60
-    , Language "Ruby"       60
     , Language "Bash"       40
-    , Language "C"          20
-    , Language "PHP"         5
+    , Language "C"          30
+    , Language "PHP"        10
     ]
